@@ -4,7 +4,7 @@ public class SudokuTester {
 
     public static void testSudokuLibraryReader() {
 
-        String gameStringTest = "800070050090123040004900002480000020901300760067010308300000085520040006100006009";
+        String gameStringTest = "004300209005009001070060043006002087190007400050083000600000105003508690042910300";
         int[][] gameGridActual = SudokuLibrary.convertStringToGrid(gameStringTest);
         int[][] gameGridExpected = {
                 {8, 0, 0, 0, 7, 0, 0, 5, 0},
