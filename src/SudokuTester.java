@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class SudokuTester {
 
-    public static void testSudokuLibraryReader() {
+    public static void testSudokuLibraryReader() throws PuzzleNotValidException {
 
         String gameStringTest = "004300209005009001070060043006002087190007400050083000600000105003508690042910300";
         int[][] gameGridActual = SudokuLibrary.convertStringToGrid(gameStringTest);
@@ -25,7 +25,7 @@ public class SudokuTester {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws PuzzleNotValidException {
         testSudokuLibraryReader();
     }
 
