@@ -8,7 +8,7 @@ public class SudokuGameEngine {
      * The main driver code for this app
      * @param args args
      * @throws IOException if the file for the puzzle library fails to load.
-     * @throws PuzzleNotValidException if loading puzzles into obejcts from the library fails.
+     * @throws PuzzleNotValidException if loading puzzles into objects from the library fails.
      */
     public static void main(String[] args) throws IOException, PuzzleNotValidException {
 

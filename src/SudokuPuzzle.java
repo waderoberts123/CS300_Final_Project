@@ -8,7 +8,7 @@ public class SudokuPuzzle {
     private final int[][] gameGrid;
     private String difficulty; // Can be "Easy", "Medium", or "Hard"
     private int numSolutions;
-    private final int[][] backtrackingGrid;
+    private final int[][] backtrackingGrid = new int[9][9];
     private final int[][] solutionGrid;
 
     /**
@@ -21,7 +21,7 @@ public class SudokuPuzzle {
         gameGrid = SudokuLibrary.convertStringToGrid(gameString);
         difficulty = setDifficulty();
         numSolutions = 0;
-        backtrackingGrid = gameGrid;
+        copy2DArray(gameGrid, backtrackingGrid);
         solutionGrid = new int[9][9];
     }
 
@@ -36,7 +36,7 @@ public class SudokuPuzzle {
         gameGrid = SudokuLibrary.convertStringToGrid(gameString);
         difficulty = setDifficulty();
         numSolutions = 0;
-        backtrackingGrid = gameGrid;
+        copy2DArray(gameGrid, backtrackingGrid);
         solutionGrid = SudokuLibrary.convertStringToGrid(SolutionString);
     }
 
